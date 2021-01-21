@@ -1,0 +1,14 @@
+name: TestProject
+
+options:
+  bundleIdPrefix: com.something
+  minimumXcodeGenVersion: 2.18.0
+
+settings:
+  SWIFT_VERSION: 5.0
+
+targets:
+  Dummy:
+    type: framework
+    platform: iOS
+    deploymentTarget: "11.0"
