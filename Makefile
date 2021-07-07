@@ -9,7 +9,7 @@ xcodegen:
 cocoapods:
 	bundle install && bundle exec pod install
 
-carthage:
+carthage_bootstrap:
 	carthage bootstrap --no-use-binaries --platform iOS --cache-builds
 
 clean:
@@ -17,5 +17,5 @@ clean:
 	rm -rf *.xcodeproj
 	rm -rf *.xcworkspace
 
-build: carthage setup_project
+build: carthage_bootstrap setup_project
 	xcodebuild -workspace TestProject.xcworkspace -scheme SharedScheme build

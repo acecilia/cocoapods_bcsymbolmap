@@ -85,6 +85,7 @@ GEM
 
 PLATFORMS
   universal-darwin-19
+  universal-darwin-20
 
 DEPENDENCIES
   cocoapods (= 1.10.0)
